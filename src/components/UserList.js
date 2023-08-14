@@ -4,6 +4,8 @@ import { fetchUsers, addUser } from "../store";
 import Button from "./Button";
 import Skeleton from "./Skeleton";
 import { useThunk } from "../hooks/useThunk";
+import UserListItem from "./UserListItem";
+import userEvent from "@testing-library/user-event";
 
 function UserList() {
   const { data } = useSelector((state) => state.users);
@@ -19,28 +21,27 @@ function UserList() {
     doCreateUser();
   };
 
-  if (isLoadingUsers) return <Skeleton times={6} className="h-10 w-full" />;
-  if (loadingUsersError) return <div>Something went wrong</div>;
+  let content;
+  if (isLoadingUsers) {
+    content = <Skeleton times={6} className="h-10 w-full" />;
+  } else if (loadingUsersError) {
+    content = <div>Error fetching data...</div>;
+  } else {
+    content = data.map((user) => {
+      return <UserListItem key={user.id} user={user} />;
+    });
+  }
 
-  const renderedUsers = data.map((u) => {
-    return (
-      <div key={u.id} className="mb-2 border rounded">
-        <div className="flex p-2 justify-between items-center cursor-pointer">
-          {u.name}
-        </div>
-      </div>
-    );
-  });
   return (
     <div>
-      <div className="flex flex-row justify-between m-3">
+      <div className="flex flex-row justify-between items-center m-3">
         <h1 className="m-2 text-xl">Users</h1>
         <Button loading={isCreatingUser} onClick={handleUserAdd}>
           + Add User
         </Button>
         {creatingUserError && "Error creating user..."}
       </div>
-      {renderedUsers}
+      {content}
     </div>
   );
 }

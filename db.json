@@ -1,5 +1,22 @@
 {
-  "users": [{ "id": 1, "name": "Ren"}],
+  "users": [
+    {
+      "name": "Dr. Cameron Hermiston",
+      "id": 1
+    },
+    {
+      "name": "Mr. Jeffrey Bergnaum",
+      "id": 2
+    },
+    {
+      "name": "Santiago Leuschke",
+      "id": 3
+    },
+    {
+      "name": "Laurence Toy",
+      "id": 4
+    }
+  ],
   "albums": [],
   "photos": []
 }

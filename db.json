@@ -30,6 +30,41 @@
       "id": 10,
       "title": "Hiking Trip",
       "userId": 1
+    },
+    {
+      "userId": 6,
+      "title": "Electronic Rubber Cheese",
+      "id": 11
+    },
+    {
+      "userId": 6,
+      "title": "Tasty Granite Shirt",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "title": "Fantastic Soft Keyboard",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "title": "Tasty Fresh Table",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "title": "Rustic Metal Chicken",
+      "id": 15
+    },
+    {
+      "userId": 3,
+      "title": "Handcrafted Frozen Pizza",
+      "id": 16
+    },
+    {
+      "userId": 3,
+      "title": "Incredible Plastic Pizza",
+      "id": 18
     }
   ],
   "photos": []

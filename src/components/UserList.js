@@ -5,7 +5,6 @@ import Button from "./Button";
 import Skeleton from "./Skeleton";
 import { useThunk } from "../hooks/useThunk";
 import UserListItem from "./UserListItem";
-import userEvent from "@testing-library/user-event";
 
 function UserList() {
   const { data } = useSelector((state) => state.users);

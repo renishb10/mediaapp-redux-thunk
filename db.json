@@ -65,7 +65,53 @@
       "userId": 3,
       "title": "Incredible Plastic Pizza",
       "id": 18
+    },
+    {
+      "userId": 9,
+      "title": "Practical Metal Sausages",
+      "id": 19
+    },
+    {
+      "userId": 9,
+      "title": "Intelligent Cotton Shirt",
+      "id": 20
+    },
+    {
+      "userId": 3,
+      "title": "Refined Frozen Salad",
+      "id": 21
+    },
+    {
+      "userId": 9,
+      "title": "Bespoke Rubber Pants",
+      "id": 22
+    },
+    {
+      "userId": 8,
+      "title": "Awesome Wooden Pizza",
+      "id": 23
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 12,
+      "url": "https://loremflickr.com/150/150/abstract?lock=1282346493935616",
+      "id": 1
+    },
+    {
+      "albumId": 12,
+      "url": "https://loremflickr.com/150/150/abstract?lock=114279562870784",
+      "id": 2
+    },
+    {
+      "albumId": 12,
+      "url": "https://loremflickr.com/150/150/abstract?lock=7501988665229312",
+      "id": 3
+    },
+    {
+      "albumId": 23,
+      "url": "https://loremflickr.com/150/150/abstract?lock=708601217810432",
+      "id": 4
+    }
+  ]
 }
